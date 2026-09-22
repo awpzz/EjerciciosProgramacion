@@ -6,9 +6,7 @@ public class ahelloyou {
 
         String nombre = sc.nextLine();
 
-        System.out.print("Hola ");
-        System.out.print(nombre);
-        System.out.print("!");
+        System.out.print("Hola " + nombre + "!");
 
 
         }
