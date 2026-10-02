@@ -10,10 +10,17 @@ public class paella {
         float precioarroz = sc.nextFloat();
         float preciogambas = sc.nextFloat();
 
-        System.out.println( + "kg arros");
-        System.out.println( + "kg gambes");
-        System.out.println( + "euros arros");
-        System.out.println( + "euros gambes");
-        System.out.println("TOTAL: " +  );
+        float arrozkg = comensals * 0.125f;
+        float gambaskg = comensals * 0.0625f;
+
+        float precioarroz2 = precioarroz * arrozkg;
+        float preciogambas2 = preciogambas * gambaskg;
+        float total = precioarroz2 + preciogambas2;
+
+        System.out.println(arrozkg + " kg arros");
+        System.out.println(gambaskg + " kg gambes");
+        System.out.println(precioarroz2 + " euros arros");
+        System.out.println(preciogambas2 + " euros gambes");
+        System.out.println("TOTAL: " + total + " euros" );
     }
 }
